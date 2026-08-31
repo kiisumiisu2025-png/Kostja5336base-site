@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111713">
+  <meta name="description" content="Официальный сайт Minecraft-сервера Kostja5336base: новости, ранги, HardPvP, команды и правила.">
+  <title>Kostja5336base — Minecraft Server</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#top"><span class="cube">K</span><span><b>Kostja5336base</b><small>Minecraft Server</small></span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <nav id="nav">
+    <a href="#updates">Обновления</a>
+    <a href="#join">Как зайти</a>
+    <a href="#hardpvp">HardPvP</a>
+    <a href="#ranks">Ранги</a>
+    <a href="#commands">Команды</a>
+    <a href="#rules">Правила</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div>
+      <span class="eyebrow">SURVIVAL • PVP • РАНГИ • СОБЫТИЯ</span>
+      <h1>Твой мир.<br><em>Твои правила.</em></h1>
+      <p class="lead">Kostja5336base — Minecraft-сервер с отдельными мирами, системой рангов, Kostja5336base, ежедневными наградами, контрактами, NPC и собственными механиками.</p>
+      <div class="actions">
+        <button class="copy primary">Скопировать IP <b class="server-address"></b></button>
+        <a class="secondary" href="#updates">Что нового ↓</a>
+      </div>
+      <div class="stats">
+        <div><b>26.2</b><span>Версия сервера</span></div>
+        <div><b>HardPvP</b><span>LifeSteal-режим</span></div>
+        <div><b>10+</b><span>Систем и рангов</span></div>
+      </div>
+    </div>
+
+    <div class="server-visual">
+      <div class="sky">
+        <div class="sun"></div><div class="cloud c1"></div><div class="cloud c2"></div>
+        <div class="hill h1"></div><div class="hill h2"></div>
+        <div class="grass"></div><div class="dirt"></div>
+      </div>
+      <div class="visual-text">
+        <span class="dot"></span><small>Сервер сообщества</small>
+        <h3>Kostja5336base</h3>
+        <p>Выживай, прокачивай ранги и заходи в HardPvP, если готов рисковать сердцами.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="updates">
+    <div class="heading"><div><span class="eyebrow">ЖУРНАЛ СЕРВЕРА</span><h2>Последние обновления</h2></div><p>Новые механики, изменения баланса и всё важное — в одном месте.</p></div>
+    <div class="updates" id="updatesGrid"></div>
+  </section>
+
+  <section class="wrap section split" id="join">
+    <div>
+      <span class="eyebrow">ПОДКЛЮЧЕНИЕ</span><h2>Как зайти</h2>
+      <p class="muted">Добавь сервер в Minecraft и используй адрес ниже.</p>
+      <div class="ipbox"><small>Адрес сервера</small><code class="server-address"></code><button class="copy mini">Копировать</button></div>
+    </div>
+    <ol class="steps">
+      <li><span>01</span><div><b>Открой Minecraft</b><p>Используй совместимую с сервером версию.</p></div></li>
+      <li><span>02</span><div><b>Сетевая игра</b><p>Нажми «Добавить сервер».</p></div></li>
+      <li><span>03</span><div><b>Вставь адрес</b><p>Скопируй IP с этой страницы.</p></div></li>
+      <li><span>04</span><div><b>Заходи</b><p>Войди на сервер и начинай играть.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="wrap section hard" id="hardpvp">
+    <span class="eyebrow red">ОСОБЫЙ МИР</span><h2>HardPvP ❤️⚔️</h2>
+    <p class="lead">Каждый игрок начинает с <b>10 сердец</b>. Умер — теряешь одно максимальное сердце. Убил другого игрока — забираешь его сердце себе.</p>
+    <div class="heart-flow">
+      <div><span>❤️</span><b>10 сердец</b><small>Старт</small></div>
+      <div><span>💀</span><b>−1 сердце</b><small>Смерть</small></div>
+      <div><span>⚔️</span><b>+1 сердце</b><small>PvP-убийство</small></div>
+      <div><span>🚪</span><b>0 сердец</b><small>Выбыл в лобби</small></div>
+    </div>
+    <div class="notice"><b>Важно:</b> инвентарь HardPvP хранится отдельно от основного мира, а серверные команды, достижения и прогресс остаются общими.</div>
+  </section>
+
+  <section class="wrap section" id="ranks">
+    <div class="heading"><div><span class="eyebrow">ПРОГРЕСС</span><h2>Ранги сервера</h2></div><p>Достижения, роли и специальные возможности.</p></div>
+    <div class="ranks" id="ranksGrid"></div>
+  </section>
+
+  <section class="wrap section" id="commands">
+    <div class="heading"><div><span class="eyebrow">ШПАРГАЛКА</span><h2>Основные команды</h2></div><p>Самое нужное в одном месте.</p></div>
+    <div class="commands">
+      <div><code>/spawn</code><span>Вернуться на спавн</span></div>
+      <div><code>/home</code><span>Телепорт домой</span></div>
+      <div><code>/tpa &lt;ник&gt;</code><span>Запрос телепорта</span></div>
+      <div><code>/tpaccept</code><span>Принять телепорт</span></div>
+      <div><code>/kit start</code><span>Стартовый набор</span></div>
+      <div><code>/kit pravila</code><span>Книга правил</span></div>
+      <div><code>/daily</code><span>Ежедневная награда</span></div>
+      <div><code>/contracts</code><span>Контракты</span></div>
+      <div><code>/bounty</code><span>Награды за игроков</span></div>
+      <div><code>/duel</code><span>Дуэли</span></div>
+      <div><code>/hardhearts</code><span>Сердца HardPvP</span></div>
+      <div><code>/menu</code><span>Главное меню</span></div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="rules">
+    <div class="rules">
+      <div><span class="eyebrow">ЧЕСТНАЯ ИГРА</span><h2>Правила</h2><p class="muted">Полная версия доступна через <code>/kit pravila</code>.</p></div>
+      <div>
+        <p><span>01</span><b>Читы</b> — бан на 25 дней.</p>
+        <p><span>02</span><b>Спам в чат</b> — бан на 3 дня.</p>
+        <p><span>03</span><b>Дюпы</b> — бан на 15 дней.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap final">
+    <span class="eyebrow">ГОТОВ?</span><h2>Заходи на Kostja5336base</h2>
+    <p class="muted">Спокойное выживание или рискованный HardPvP — выбирай сам.</p>
+    <button class="copy primary">Скопировать адрес <b class="server-address"></b></button>
+  </section>
+</main>
+
+<footer><b>Kostja5336base</b><span>© 2026 • Не является официальным продуктом Mojang Studios.</span></footer>
+<div class="toast" id="toast">IP скопирован!</div>
+<script src="news.js"></script><script src="app.js"></script>
+</body>
+</html>
